@@ -1,0 +1,430 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="vi" class="scroll-smooth">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>P\uc0\u272 M \u272 \u7865 p Zai | \u272 \u7847 u T\u432  Th\u7855 ng L\u7899 n</title>\
+    \
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">\
+    \
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">\
+    \
+    <script src="https://cdn.tailwindcss.com"></script>\
+    \
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    colors: \{\
+                        brand: \{\
+                            green: '#059669', // Emerald\
+                            purple: '#7c3aed', // Royal Purple\
+                            dark: '#0f172a', // Slate 900\
+                            light: '#f8fafc', // Slate 50\
+                        \}\
+                    \},\
+                    fontFamily: \{\
+                        sans: ['Lato', 'sans-serif'],\
+                        heading: ['Poppins', 'sans-serif'],\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+\
+    <style>\
+        /* Custom Styles & Animations */\
+        .text-gradient \{\
+            background: linear-gradient(to right, #059669, #7c3aed);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+        .bg-gradient-brand \{\
+            background: linear-gradient(135deg, rgba(5, 150, 105, 0.95), rgba(124, 58, 237, 0.95));\
+        \}\
+        .glassmorphism \{\
+            background: rgba(255, 255, 255, 0.1);\
+            backdrop-filter: blur(10px);\
+            border: 1px solid rgba(255, 255, 255, 0.2);\
+        \}\
+    </style>\
+</head>\
+<body class="bg-brand-light text-slate-700 font-sans antialiased overflow-x-hidden">\
+\
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="flex justify-between items-center h-20">\
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">\
+                    <span class="font-heading font-bold text-2xl text-gradient uppercase tracking-wider">P\uc0\u272 M \u272 \u7865 p Zai</span>\
+                </div>\
+                \
+                <div class="hidden md:flex space-x-8 items-center">\
+                    <a href="#thitruong" class="text-slate-600 hover:text-brand-green font-semibold transition-colors">Th\uc0\u7883  Tr\u432 \u7901 ng</a>\
+                    <a href="#trietly" class="text-slate-600 hover:text-brand-purple font-semibold transition-colors">Tri\uc0\u7871 t L\'fd</a>\
+                    <a href="#dichvu" class="text-slate-600 hover:text-brand-green font-semibold transition-colors">Room VIP</a>\
+                    <a href="#dangky" class="bg-brand-purple hover:bg-purple-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-purple-500/30 transition-transform transform hover:-translate-y-0.5">G\uc0\u7855 n ID / M\u7903  TK</a>\
+                </div>\
+\
+                <div class="md:hidden flex items-center">\
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-dark focus:outline-none">\
+                        <i class="fa-solid fa-bars text-2xl"></i>\
+                    </button>\
+                </div>\
+            </div>\
+        </div>\
+\
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">\
+            <div class="px-4 pt-2 pb-6 space-y-2 text-center">\
+                <a href="#thitruong" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 mobile-link">Th\uc0\u7883  Tr\u432 \u7901 ng</a>\
+                <a href="#trietly" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 mobile-link">Tri\uc0\u7871 t L\'fd \u272 \u7847 u T\u432 </a>\
+                <a href="#dichvu" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 mobile-link">Room VIP</a>\
+                <a href="#dangky" class="block mt-4 bg-brand-green text-white px-3 py-3 rounded-lg text-base font-bold shadow-md mobile-link">\uc0\u272 \u259 ng K\'fd T\u432  V\u7845 n</a>\
+            </div>\
+        </div>\
+    </nav>\
+\
+    <div class="pt-20">\
+        <div class="tradingview-widget-container">\
+            <div class="tradingview-widget-container__widget"></div>\
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>\
+            \{\
+            "symbols": [\
+                \{"proName": "HOSE:VNINDEX", "title": "VN-INDEX"\},\
+                \{"proName": "HOSE:VN30", "title": "VN30"\},\
+                \{"proName": "HOSE:SSI", "title": "SSI"\},\
+                \{"proName": "HOSE:HPG", "title": "HPG"\},\
+                \{"proName": "HOSE:VND", "title": "VND"\}\
+            ],\
+            "showSymbolLogo": true,\
+            "isTransparent": false,\
+            "displayMode": "adaptive",\
+            "colorTheme": "light",\
+            "locale": "vi_VN"\
+            \}\
+            </script>\
+        </div>\
+        </div>\
+\
+    <section class="relative bg-brand-dark text-white overflow-hidden py-20 lg:py-32">\
+        <div class="absolute inset-0 z-0 opacity-40">\
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop" alt="Stock Market Chart" class="w-full h-full object-cover">\
+            <div class="absolute inset-0 bg-gradient-brand mix-blend-multiply"></div>\
+        </div>\
+        \
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">\
+            <div class="grid lg:grid-cols-2 gap-12 items-center">\
+                <div class="text-center lg:text-left">\
+                    <span class="inline-block py-1 px-3 rounded-full bg-brand-green/20 text-green-300 font-semibold text-sm mb-6 border border-brand-green/30">\
+                        <i class="fa-solid fa-bolt mr-2"></i>H\uc0\u7879  th\u7889 ng \u273 \u7847 u t\u432  th\u7921 c chi\u7871 n\
+                    </span>\
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">\
+                        \uc0\u272 \u7847 u T\u432  Nh\'e0n T\'eanh, <br>\
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-400">Th\uc0\u7855 ng L\u7899 n B\u7873 n V\u7919 ng</span>\
+                    </h1>\
+                    <p class="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl mx-auto lg:mx-0">\
+                        \uc0\u272 \u7891 ng h\'e0nh c\'f9ng <strong>P\u272 M</strong> - Chuy\'ean gia t\u432  v\u7845 n chi\u7871 n l\u432 \u7907 c. N\u7855 m b\u7855 t "si\'eau c\u7893  phi\u7871 u", qu\u7843 n tr\u7883  r\u7911 i ro k\u7927  lu\u7853 t v\'e0 gia t\u259 ng t\'e0i s\u7843 n v\u432 \u7907 t tr\u7897 i.\
+                    </p>\
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">\
+                        <a href="#dangky" class="bg-brand-green hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-green-500/40 transition-all flex items-center justify-center">\
+                            G\uc0\u7855 n ID T\u432  V\u7845 n Ngay <i class="fa-solid fa-arrow-right ml-2"></i>\
+                        </a>\
+                        <a href="#thitruong" class="glassmorphism hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">\
+                            Xem Nh\uc0\u7883 p \u272 \u7853 p Th\u7883  Tr\u432 \u7901 ng\
+                        </a>\
+                    </div>\
+                </div>\
+                \
+                <div class="hidden lg:block relative">\
+                    <div class="absolute inset-0 bg-brand-purple rounded-full blur-3xl opacity-30 animate-pulse"></div>\
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop" alt="P\uc0\u272 M Chuy\'ean Gia" class="relative z-10 w-full max-w-md mx-auto rounded-3xl shadow-2xl border-4 border-white/10 object-cover h-[500px]">\
+                    <div class="absolute bottom-10 -left-10 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-4 z-20 animate-bounce" style="animation-duration: 3s;">\
+                        <div class="bg-green-100 text-brand-green p-3 rounded-full">\
+                            <i class="fa-solid fa-chart-line text-2xl"></i>\
+                        </div>\
+                        <div>\
+                            <p class="text-sm text-slate-500 font-semibold">T\uc0\u7927  su\u7845 t l\u7907 i nhu\u7853 n</p>\
+                            <p class="text-xl font-bold text-brand-dark">+45% / N\uc0\u259 m</p>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+  <section id="thitruong" class="py-20 bg-slate-50 border-y border-slate-200/60">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="text-center mb-16">\
+                <span class="inline-block py-1 px-4 rounded-full bg-brand-purple/10 text-brand-purple font-bold text-sm mb-4 border border-brand-purple/20">\
+                    <i class="fa-solid fa-radar mr-2"></i>Radar C\uc0\u7893  Phi\u7871 u\
+                </span>\
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-4">Nh\uc0\u7883 p \u272 \u7853 p & H\u7891  S\u417  Ph\'e2n T\'edch</h2>\
+                <div class="w-24 h-1 bg-gradient-to-r from-brand-green to-brand-purple mx-auto rounded-full mb-6"></div>\
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">Theo d\'f5i di\uc0\u7877 n bi\u7871 n ch\u7881  s\u7889  VN-Index v\'e0 b\'f3c t\'e1ch s\u7913 c kh\u7887 e t\'e0i ch\'ednh c\u7911 a c\'e1c m\'e3 c\u7893  phi\u7871 u t\'e2m \u273 i\u7875 m.</p>\
+            </div>\
+\
+            <div class="grid lg:grid-cols-3 gap-8">\
+                \
+                <div class="lg:col-span-1 bg-white rounded-2xl p-5 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col h-[480px] transition-transform hover:-translate-y-1 duration-300">\
+                    <div class="flex justify-between items-center mb-5">\
+                        <h3 class="font-heading font-bold text-lg text-slate-800 flex items-center">\
+                            <i class="fa-solid fa-chart-pie text-brand-green mr-2"></i> TT Chung\
+                        </h3>\
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">TradingView</span>\
+                    </div>\
+                    <div class="flex-grow rounded-xl overflow-hidden border border-slate-100 bg-slate-50">\
+                        <div class="tradingview-widget-container h-full w-full">\
+                            <div class="tradingview-widget-container__widget h-full w-full"></div>\
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>\
+                            \{\
+                            "symbol": "HOSE:VNINDEX",\
+                            "width": "100%",\
+                            "height": "100%",\
+                            "locale": "vi_VN",\
+                            "dateRange": "1M",\
+                            "colorTheme": "light",\
+                            "isTransparent": true,\
+                            "autosize": true,\
+                            "largeChartUrl": ""\
+                            \}\
+                            </script>\
+                        </div>\
+                        </div>\
+                </div>\
+\
+                <div class="lg:col-span-2 bg-white rounded-2xl p-5 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col h-[480px] transition-transform hover:-translate-y-1 duration-300 relative overflow-hidden">\
+                    <div class="absolute -top-20 -right-20 w-40 h-40 bg-brand-purple/5 rounded-full blur-2xl"></div>\
+                    \
+                    <div class="flex justify-between items-center mb-5 relative z-10">\
+                        <h3 class="font-heading font-bold text-lg text-slate-800 flex items-center">\
+                            <i class="fa-solid fa-magnifying-glass-chart text-brand-purple mr-2"></i> T\uc0\u7847 m So\'e1t Tr\u7885 ng \u272 i\u7875 m\
+                        </h3>\
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-100 px-2 py-1 rounded">D\uc0\u7919  li\u7879 u Simplize</span>\
+                    </div>\
+                    \
+                    <div class="flex-grow rounded-xl overflow-hidden relative z-10">\
+                        <div class="simplize-widget-chart-overview w-full h-full">\
+                            <script type="text/javascript" src="https://static.simplize.vn/static/widget/simplize-widget-v0.0.2.min.js" async>\
+                            \{\
+                                "tickers": [\
+                                    \{"ticker":"HPG","type":"stock"\},\
+                                    \{"ticker":"SSI","type":"stock"\},\
+                                    \{"ticker":"VCB","type":"stock"\}\
+                                ],\
+                                "default_time_frame": "1Y",\
+                                "time_frames": ["1D","1M","3M","1Y"],\
+                                "theme": "light",\
+                                "size": \{"width":"","height":""\},\
+                                "auto_size": true,\
+                                "font": "Lato", \
+                                "text_color": "#334155",\
+                                "text_color_chart": "#64748b",\
+                                "background_color": "#ffffff",\
+                                "tab_colors": \{\
+                                    "active": "#7c3aed", \
+                                    "default": "#f1f5f9"\
+                                \},\
+                                "chart_height": 260,\
+                                "show_price_chart": true,\
+                                "show_fi": true,\
+                                "chart_type": "line",\
+                                "chart_line_color": "#059669", \
+                                "chart_candle_color": ["#059669","#ef4444"],\
+                                "fi": ["market_cap_vnd","volume","outstanding_shares","pe_ratio","pb_ratio","eps"]\
+                            \}\
+                            </script>\
+                        </div>\
+                        </div>\
+                </div>\
+\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="trietly" class="py-20 bg-slate-50">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="text-center mb-16">\
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-4">T\uc0\u7841 i Sao Ch\u7885 n P\u272 M?</h2>\
+                <div class="w-24 h-1 bg-gradient-to-r from-brand-green to-brand-purple mx-auto rounded-full mb-6"></div>\
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">H\uc0\u7879  th\u7889 ng ph\u432 \u417 ng ph\'e1p lu\u7853 n \u273 \u432 \u7907 c ki\u7875 m ch\u7913 ng qua nhi\u7873 u chu k\u7923  th\u7883  tr\u432 \u7901 ng.</p>\
+            </div>\
+\
+            <div class="grid md:grid-cols-3 gap-8">\
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-b-4 border-brand-green">\
+                    <div class="w-16 h-16 bg-green-50 text-brand-green rounded-2xl flex items-center justify-center text-3xl mb-6">\
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>\
+                    </div>\
+                    <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">T\uc0\u7847 m Nh\'ecn V\u297  M\'f4</h3>\
+                    <p class="text-slate-600">L\uc0\u7921 a ch\u7885 n c\u7893  phi\u7871 u d\u7921 a tr\'ean ph\'e2n t\'edch d\'f2ng ti\u7873 n l\u7899 n, chu k\u7923  kinh t\u7871  v\'e0 n\u7873 n t\u7843 ng c\u417  b\u7843 n doanh nghi\u7879 p v\u7919 ng ch\u7855 c.</p>\
+                </div>\
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-b-4 border-brand-purple">\
+                    <div class="w-16 h-16 bg-purple-50 text-brand-purple rounded-2xl flex items-center justify-center text-3xl mb-6">\
+                        <i class="fa-solid fa-shield-halved"></i>\
+                    </div>\
+                    <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Qu\uc0\u7843 n Tr\u7883  R\u7911 i Ro</h3>\
+                    <p class="text-slate-600">Chi\uc0\u7871 n l\u432 \u7907 c \u273 i v\u7889 n nghi\'eam ng\u7863 t, tu\'e2n th\u7911  k\u7927  lu\u7853 t c\u7855 t l\u7895  - ch\u7889 t l\u7901 i, b\u7843 o v\u7879  t\'e0i kho\u7843 n N\u272 T trong m\u7885 i bi\u7871 n \u273 \u7897 ng.</p>\
+                </div>\
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-b-4 border-amber-500">\
+                    <div class="w-16 h-16 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center text-3xl mb-6">\
+                        <i class="fa-solid fa-bolt"></i>\
+                    </div>\
+                    <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">\uc0\u272 i\u7875 m R\u417 i K\u7929  Thu\u7853 t</h3>\
+                    <p class="text-slate-600">S\uc0\u7917  d\u7909 ng PTKT \u273 \u7875  t\u7889 i \u432 u h\'f3a \u273 i\u7875 m Mua/B\'e1n, "b\u7855 t" \u273 \'fang ch\'e2n s\'f3ng \u273 \u7875  \u273 em l\u7841 i bi\'ean \u273 \u7897  l\u7907 i nhu\u7853 n cao nh\u7845 t.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="dangky" class="py-20 bg-brand-dark relative overflow-hidden">\
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-purple rounded-full filter blur-[100px] opacity-20"></div>\
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-green rounded-full filter blur-[100px] opacity-20"></div>\
+        \
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">\
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">\
+                <div class="grid lg:grid-cols-5">\
+                    <div class="lg:col-span-2 bg-gradient-brand p-10 lg:p-12 text-white flex flex-col justify-center">\
+                        <h2 class="font-heading text-3xl font-bold mb-6">Gia Nh\uc0\u7853 p C\u7897 ng \u272 \u7891 ng VIP P\u272 M</h2>\
+                        <p class="mb-8 text-white/90 text-lg">\uc0\u272 \u259 ng k\'fd ngay \u273 \u7875  nh\u7853 n danh m\u7909 c 3 m\'e3 c\u7893  phi\u7871 u ti\u7873 m n\u259 ng b\u7913 t ph\'e1 trong qu\'fd n\'e0y v\'e0 \u273 \u7863 c quy\u7873 n t\u432  v\u7845 n 1-1.</p>\
+                        \
+                        <div class="space-y-6">\
+                            <div class="flex items-start">\
+                                <div class="bg-white/20 p-2 rounded-lg mr-4">\
+                                    <i class="fa-solid fa-check text-white"></i>\
+                                </div>\
+                                <div>\
+                                    <h4 class="font-bold">Ph\'edm H\'e0ng Real-time</h4>\
+                                    <p class="text-sm text-white/80">C\uc0\u7843 nh b\'e1o \u273 i\u7875 m mua/b\'e1n ngay trong phi\'ean.</p>\
+                                </div>\
+                            </div>\
+                            <div class="flex items-start">\
+                                <div class="bg-white/20 p-2 rounded-lg mr-4">\
+                                    <i class="fa-solid fa-check text-white"></i>\
+                                </div>\
+                                <div>\
+                                    <h4 class="font-bold">C\uc0\u417  c\u7845 u danh m\u7909 c</h4>\
+                                    <p class="text-sm text-white/80">D\uc0\u7885 n d\u7865 p "c\u7887  d\u7841 i", tr\u7891 ng "hoa h\u7891 ng".</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="lg:col-span-3 p-10 lg:p-12">\
+                        <h3 class="font-heading text-2xl font-bold text-brand-dark mb-8">\uc0\u272 i\u7873 n th\'f4ng tin \u273 \u7875  \u273 \u432 \u7907 c h\u7895  tr\u7907 </h3>\
+                        <form id="leadForm" class="space-y-6">\
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
+                                <div>\
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">H\uc0\u7885  v\'e0 T\'ean *</label>\
+                                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all" placeholder="Nguy\uc0\u7877 n V\u259 n A">\
+                                </div>\
+                                <div>\
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">S\uc0\u7889  \u273 i\u7879 n tho\u7841 i (Zalo) *</label>\
+                                    <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all" placeholder="09xx xxx xxx">\
+                                </div>\
+                            </div>\
+                            \
+                            <div>\
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Quy m\'f4 v\uc0\u7889 n d\u7921  ki\u7871 n *</label>\
+                                <select required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all bg-white">\
+                                    <option value="" disabled selected>Ch\uc0\u7885 n m\u7913 c v\u7889 n c\u7911 a b\u7841 n</option>\
+                                    <option value="duoi_100">D\uc0\u432 \u7899 i 100 Tri\u7879 u</option>\
+                                    <option value="100_500">100 - 500 Tri\uc0\u7879 u</option>\
+                                    <option value="500_1ty">500 Tri\uc0\u7879 u - 1 T\u7927 </option>\
+                                    <option value="tren_1ty">Tr\'ean 1 T\uc0\u7927  (Kh\'e1ch VIP)</option>\
+                                </select>\
+                            </div>\
+\
+                            <div>\
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">B\uc0\u7841 n \u273 \'e3 c\'f3 t\'e0i kho\u7843 n Ch\u7913 ng kho\'e1n ch\u432 a?</label>\
+                                <div class="flex space-x-6">\
+                                    <label class="flex items-center">\
+                                        <input type="radio" name="has_acc" class="w-5 h-5 text-brand-green focus:ring-brand-green" value="yes" checked>\
+                                        <span class="ml-2 text-slate-600">\uc0\u272 \'e3 c\'f3 (C\u7847 n chuy\u7875 n ID)</span>\
+                                    </label>\
+                                    <label class="flex items-center">\
+                                        <input type="radio" name="has_acc" class="w-5 h-5 text-brand-green focus:ring-brand-green" value="no">\
+                                        <span class="ml-2 text-slate-600">Ch\uc0\u432 a c\'f3 (M\u7903  m\u7899 i)</span>\
+                                    </label>\
+                                </div>\
+                            </div>\
+\
+                            <button type="submit" class="w-full bg-brand-dark hover:bg-slate-800 text-white font-bold py-4 rounded-xl shadow-lg transition-transform transform hover:-translate-y-1">\
+                                \uc0\u272 \u258 NG K\'dd NH\u7852 N T\u431  V\u7844 N NGAY\
+                            </button>\
+                            <p class="text-xs text-slate-500 text-center mt-4"><i class="fa-solid fa-lock mr-1"></i> Th\'f4ng tin c\uc0\u7911 a b\u7841 n \u273 \u432 \u7907 c b\u7843 o m\u7853 t tuy\u7879 t \u273 \u7889 i.</p>\
+                        </form>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="grid md:grid-cols-3 gap-8 items-center">\
+                <div>\
+                    <span class="font-heading font-bold text-2xl text-white uppercase tracking-wider mb-4 block">P\uc0\u272 M \u272 \u7865 p Zai</span>\
+                    <p class="text-sm">H\uc0\u7879  th\u7889 ng t\u432  v\u7845 n ch\u7913 ng kho\'e1n chuy\'ean nghi\u7879 p, t\u7853 n t\'e2m. Ki\u7871 n t\u7841 o t\'e0i s\u7843 n, x\'e2y d\u7921 ng t\u7921  do t\'e0i ch\'ednh.</p>\
+                </div>\
+                <div class="text-center md:text-left">\
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm">Li\'ean h\uc0\u7879  nhanh</h4>\
+                    <p class="mb-2"><i class="fa-solid fa-phone mr-2 text-brand-green"></i> Hotline/Zalo: 09xx.xxx.xxx</p>\
+                    <p><i class="fa-solid fa-envelope mr-2 text-brand-purple"></i> Email: lienhe@pdm-depzai.com</p>\
+                </div>\
+                <div class="flex justify-center md:justify-end space-x-4">\
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-green hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>\
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-purple hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>\
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors"><i class="fa-solid fa-comment-dots"></i></a> </div>\
+            </div>\
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-sm">\
+                <p>&copy; 2024 P\uc0\u272 M \u272 \u7865 p Zai. All rights reserved. <i>\u272 \u7847 u t\u432  ch\u7913 ng kho\'e1n lu\'f4n c\'f3 r\u7911 i ro, vui l\'f2ng c\'e2n nh\u7855 c k\u7929  l\u432 \u7905 ng.</i></p>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // Mobile Menu Toggle\
+        const btn = document.getElementById('mobile-menu-btn');\
+        const menu = document.getElementById('mobile-menu');\
+        const mobileLinks = document.querySelectorAll('.mobile-link');\
+\
+        btn.addEventListener('click', () => \{\
+            menu.classList.toggle('hidden');\
+        \});\
+\
+        // Close mobile menu when clicking a link\
+        mobileLinks.forEach(link => \{\
+            link.addEventListener('click', () => \{\
+                menu.classList.add('hidden');\
+            \});\
+        \});\
+\
+        // Navbar Scroll Effect (Add shadow and background opacity on scroll)\
+        window.addEventListener('scroll', () => \{\
+            const nav = document.getElementById('navbar');\
+            if (window.scrollY > 10) \{\
+                nav.classList.add('shadow-md', 'bg-white/95');\
+                nav.classList.remove('bg-white/90');\
+            \} else \{\
+                nav.classList.remove('shadow-md', 'bg-white/95');\
+                nav.classList.add('bg-white/90');\
+            \}\
+        \});\
+\
+        // Form Submission Handler (Mockup)\
+        document.getElementById('leadForm').addEventListener('submit', function(e) \{\
+            e.preventDefault();\
+            // In phase 2, you will send this to Firebase/Backend.\
+            alert('\uc0\u55356 \u57225  Ch\'fac m\u7915 ng! B\u7841 n \u273 \'e3 \u273 \u259 ng k\'fd th\'e0nh c\'f4ng. H\u7879  th\u7889 ng P\u272 M s\u7869  li\'ean h\u7879  qua Zalo v\u7899 i b\u7841 n trong v\'f2ng 24h t\u7899 i!');\
+            this.reset();\
+        \});\
+    </script>\
+</body>\
+</html>}
